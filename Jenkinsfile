@@ -9,13 +9,13 @@ pipeline {
 
     stage('Install Apache2') {
       steps {
-        sh 'sh \'sudo apt install apache2 -y\''
+        sh 'sudo apt install apache2 -y'
       }
     }
 
     stage('Deploy the App') {
       steps {
-        sh 'sh \'sudo cp -R * /var/www/html\''
+        sh 'sudo cp -R * /var/www/html'
       }
     }
 
